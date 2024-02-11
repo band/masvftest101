@@ -67,3 +67,5 @@ References:
   submodule that I followed:
     <https://stackoverflow.com/questions/29882960/changing-an-existing-submodules-branch/73474931#73474931>  
 	
+
+Note: this note is almost identical to a similar note I posted 10 months ago on the Massive Wiki developer wiki: [2023-04-06 Bill submodule mishigas - Developer Wiki (Massive Wiki)](https://developer.massive.wiki/2023-04-06_bill_submodule_mishigas)  
