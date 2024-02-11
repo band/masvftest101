@@ -4,7 +4,8 @@
 
 #### Selected Content
 
-[[20210902-BethSawin|Beth Sawin on multisolving]]
+[[20210902-BethSawin|Beth Sawin on multisolving]]  
+[[notes/20210606-azadiExcerpt|Arundhati Roy - Azadi]]  
 
 #### General Navigation
 
