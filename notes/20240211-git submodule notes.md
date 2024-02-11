@@ -65,5 +65,5 @@ nothing to commit, working tree clean
 References:  
 [^1] This is the up-to-date example of how to change the branch on an existing
   submodule that I followed:
-    https://stackoverflow.com/questions/29882960/changing-an-existing-submodules-branch/73474931#73474931  
+    <https://stackoverflow.com/questions/29882960/changing-an-existing-submodules-branch/73474931#73474931>  
 	
