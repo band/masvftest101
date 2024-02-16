@@ -1,0 +1,43 @@
+```
+.
+├── .massivewikibuilder
+    ├── README.md
+    ├── massivewikibuilder
+        ├── LICENSE
+        ├── README.md
+        ├── build-index.js
+        ├── mistletoe_renderer
+            ├── massivewiki.py
+            ├── render.py
+            └── test.py
+        ├── mwb.py
+        ├── mwb.yaml
+        ├── package-lock.json
+        ├── package.json
+        ├── requirements.txt
+        └── tests
+            └── bespoke-tests
+                ├── README.md
+                ├── baseline
+                ├── bespoke-test_mwb.py
+                └── test-input
+    ├── mwb.yaml
+    └── this-wiki-themes
+        ├── README.md
+        ├── alto
+        ├── basso
+            ├── LICENSE
+            ├── README.md
+            ├── _footer.html
+            ├── _header.html
+            ├── _javascript.html
+            ├── _navbar.html
+            ├── all-pages.html
+            ├── page.html
+            ├── recent-pages.html
+            ├── search.html
+            ├── static
+                └── mwb-static
+                    └── css
+            └── wiki.html
+```
