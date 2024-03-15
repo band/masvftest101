@@ -7808,3 +7808,13 @@ span.incipient-wikilink:hover::after {
   margin-left: -.5em;
   margin-bottom: -.5em;
 }
+
+/* Recent Changes page abstract */
+blockquote.recent-changes-page-abstract {
+  margin-left: 2em;
+}
+
+/* transclusion error */
+span.transclusion-error {
+  color: #dd3333;
+}
