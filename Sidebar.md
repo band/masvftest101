@@ -10,3 +10,6 @@
 [Search](/search.html)  
 [All Pages](/all-pages.html)  
 [Recent Changes](/recent-pages.html)   
+
+temp transclude test
+![[Sidebar]]  
