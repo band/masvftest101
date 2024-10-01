@@ -11,3 +11,5 @@
 
 # Massive Wiki Builder
 .massivewikibuilder/output/*
+# nxc version
+.nxc/output/*
