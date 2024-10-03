@@ -1,3 +1,5 @@
+# Beth Sawin
+
 ## 2021-09-02 on multi-solving
 
 from Dr. Beth Sawin, co-founder of Climate Interactive, shares her vision for [how we might ‘multisolve’ our way to a more livable planet.](https://atmos.earth/interconnected-problems-call-for-interconnected-solutions-elizabeth-sawin-climate-interactive/)

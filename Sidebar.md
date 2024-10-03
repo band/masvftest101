@@ -7,6 +7,6 @@
 [SEARCH](/search.html)  
 #### Selected Content
 
-[[Beth Sawin|Beth Sawin on multisolving]]  
+[[Beth Sawin]]    
 [[notes/20210606-azadiExcerpt|Arundhati Roy - Azadi]]  
 
