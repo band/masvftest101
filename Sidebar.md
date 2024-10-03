@@ -7,6 +7,6 @@
 [Recent Changes](/recent-pages.html)   
 #### Selected Content
 
-[[20210902-BethSawin|Beth Sawin on multisolving]]  
+[[Beth Sawin|Beth Sawin on multisolving]]  
 [[notes/20210606-azadiExcerpt|Arundhati Roy - Azadi]]  
 
