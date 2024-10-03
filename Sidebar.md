@@ -1,10 +1,10 @@
 ## Site Navigation
 
-[[README|Home]] 
+[[README|HOME]]  
 
-[Search](/search.html)  
-[All Pages](/all-pages.html)  
-[Recent Changes](/recent-pages.html)   
+[ALL PAGES](/all-pages.html)  
+[RECENT CHANGES](/recent-pages.html)   
+[SEARCH](/search.html)  
 #### Selected Content
 
 [[Beth Sawin|Beth Sawin on multisolving]]  
