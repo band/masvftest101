@@ -3,7 +3,7 @@
 APAvar: Calvino, Italo (1988). Six Memos for the Next Millennium. Mariner Books.  
 Link: https://search.worldcat.org/en/title/948668878  
 
-(WLA): these excerpts may skip all around ...   
+nWLA: these excerpts may skip all around ...   
 
 pages 111 - 112:  
 > But there is another definition in which I recognize myself fully, and that is of the imagination as repertoire of the potential, of the hypothetical, of that which is not and has not been and may never be but could have been.  

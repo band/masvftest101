@@ -12,3 +12,15 @@ echo "$NETLIFY_BUILD_BASE"  # returns
 /opt/build
 ```
 
+```shell
+ls -al "$NETLIFY_BUILD_BASE"
+total 8
+drwxr-xr-x  5 buildbot root       48 Oct  4 12:43 .
+drwxr-xr-x  1 root     root       36 Oct  4 12:43 ..
+drwxr-xr-x 24 buildbot root     4096 Oct  4 12:43 cache
+drwxr-xr-x  2 buildbot buildbot   18 Oct  4 12:43 env_store
+drwxr-xr-x  9 buildbot root     4096 Oct  4 12:43 repo
+```
+
+- observation: git index problem does not seem to be happening
+  - check with other Netlify builds
