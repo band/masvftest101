@@ -24,3 +24,11 @@ drwxr-xr-x  9 buildbot root     4096 Oct  4 12:43 repo
 
 - observation: git index problem does not seem to be happening
   - check with other Netlify builds
+
+## 2024-10-06:
+- problem solved and behavior understood  
+	- specifying branch "main" in the git log subprocess command returned empty strings for git log commands on latest commit  
+	- removing the branch specification fixes the problem  
+	- the branch name "main" does not match the name of the branch netlify is building from (is this true?)  
+	- Test this updated file  
+		- ASSERT: will be at the top of the recent files list  
