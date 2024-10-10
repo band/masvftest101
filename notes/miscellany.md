@@ -9,3 +9,7 @@
 > ... As science begins to mistrust general explanations and solutions that are not narrow or specialized, the great challenge for literature will be to learn to weave together different kinds of knowledge and different codes into a pluralistic, multifaceted vision of the world.  
 
 cf. [[Italo Calvino - notes on Six Memos]]  
+
+## 2024-10-10  
+- new words needed to avoid conflating human thinking with AI and LLM implementations and actions
+
