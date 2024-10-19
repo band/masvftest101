@@ -1,5 +1,5 @@
 # miscellany
- - by which is meant, links to other notable notes, and, perhaps, some commentary on the notability
+ - by which is meant, links to other notable notes, and, perhaps, some commentary on what is notable about the link.
 
 - an example of commentary on the present and reflection on oneself  
 	 [[20210606-azadiExcerpt]]  
@@ -11,5 +11,10 @@
 cf. [[Italo Calvino - notes on Six Memos]]  
 
 ## 2024-10-10  
-- new words needed to avoid conflating human thinking with AI and LLM implementations and actions
+- new words needed to avoid conflating human thinking with AI and LLM implementations and actions, a.k.a. data processing.
+
+### 2024-10-14:  
+/ this is a fragment? //
+// and this? also?  /
+- what does it look like in ia-Writer? 
 
