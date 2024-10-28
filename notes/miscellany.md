@@ -14,7 +14,7 @@ cf. [[Italo Calvino - notes on Six Memos]]
 - new words needed to avoid conflating human thinking with AI and LLM implementations and actions, a.k.a. data processing.
 
 ### 2024-10-14:  
-/ this is a fragment? //
-// and this? also?  /
+/ this is a fragment? //  
+// and this? also?  /  
 - what does it look like in ia-Writer? 
 
