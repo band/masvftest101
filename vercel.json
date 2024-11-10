@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "framework": null,
-  "functions": {
-    "api/*.py": {
-      "runtime": "vercel-python@3.8"
-    }
-  },
+		"framework": null,
+		"buildCommand": "pip install --upgrade pip && pip install -r .nxc/requirements.txt && .nxc/nxc build -i .. -o ../public --lunr --commits",
+		"outputDirectory": "public",
   "builds": [
     {
       "src": ".nxc/requirements.txt",
@@ -27,5 +24,6 @@
       "src": "/(.*)",
       "dest": "/public/$1"
     }
-  ]
+  ],
+	"pythonVersion": "3.8"
 }
