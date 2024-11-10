@@ -27,6 +27,5 @@
       "src": "/(.*)",
       "dest": "/public/$1"
     }
-  ],
-  "pythonVersion": "3.8"
+  ]
 }
