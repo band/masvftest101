@@ -13,6 +13,7 @@
 .massivewikibuilder/output/*
 # nxc version
 .nxc/output/*
+.nxc/*output/*
 
 # Node
 node_modules
