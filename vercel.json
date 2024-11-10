@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "framework": null
+	"framework": null,
   "buildCommand": "python -m venv venv && . venv/bin/activate && pip install --upgrade pip && pip install -r .nxc/requirements.txt && cd .nxc && nxc build -i .. -o ../public --lunr --commits",
   "outputDirectory": "public",
   "builds": [
