@@ -1,12 +1,6 @@
 {
   "version": 2,
   "framework": null,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/.nxc/output/$1"
-    }
-  ],
   "env": {
     "PYTHON_VERSION": "3.8"
   },
