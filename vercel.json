@@ -1,21 +1,23 @@
 {
   "version": 2,
+  "framework": null,
+  "buildCommand": "cd .nxc && nxc build -i .. -o ../public -r /ennextest --commits",
+  "outputDirectory": "public",
   "builds": [
     {
-      "src": "./**/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": ".nxc/output"
-      }
+      "src": "**",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
     }
   ],
   "env": {
     "PYTHON_VERSION": "3.8"
   },
-  "build": {
-    "env": {
-      "PYTHON_VERSION": "3.8"
-    },
-    "command": "cd .nxc && pip install -r requirements.txt && nxc build -i .. -o ./output --lunr --commits"
-  }
+  "installCommand": "python -m venv venv && . venv/bin/activate && pip install --upgrade pip && pip install -r .nxc/requirements.txt",
+  "public": true
 }
