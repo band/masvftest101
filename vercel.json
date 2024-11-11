@@ -1,25 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "cd .nxc && npm install && python -m pip install --upgrade pip && pip install -r requirements.txt && nxc -i .. -o ../public --lunr --commits",
-  "outputDirectory": "public",
-  "builds": [
-    {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }
-  ],
+  "buildCommand": "cd .nxc && npm install && python -m pip install --upgrade pip && pip install -r requirements.txt && nxc -i .. -o ./output --lunr --commits",
+  "outputDirectory": ".nxc/output",
   "routes": [
     {
-      "src": "/mwb-static/(.*)",
-      "dest": "/mwb-static/$1"
-    },
-    {
-      "src": "/(.+\\.html)",
-      "dest": "/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/public/$1"
+      "dest": "/$1"
     }
   ],
   "env": {
