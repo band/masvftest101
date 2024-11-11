@@ -1,29 +1,29 @@
 {
   "version": 2,
-		"framework": null,
-		"buildCommand": "pip install --upgrade pip && pip install -r .nxc/requirements.txt && .nxc/nxc build -i .. -o ../public --lunr --commits",
-		"outputDirectory": "public",
+  "buildCommand": "cd .nxc && npm install && python -m pip install --upgrade pip && pip install -r requirements.txt && nxc -i .. -o ../public --lunr --commits",
+  "outputDirectory": "public",
   "builds": [
     {
-      "src": ".nxc/requirements.txt",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "50mb"
-      }
-    },
-    {
-      "src": ".nxc/nxc",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "50mb"
-      }
+      "src": "**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/mwb-static/(.*)",
+      "dest": "/mwb-static/$1"
+    },
+    {
+      "src": "/(.+\\.html)",
+      "dest": "/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/public/$1"
+      "dest": "/index.html"
     }
   ],
-	"pythonVersion": "3.8"
+  "env": {
+    "PYTHON_VERSION": "3.8",
+    "NODE_VERSION": "16"
+  }
 }
