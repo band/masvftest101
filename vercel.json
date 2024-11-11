@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "cd .nxc && npm install && python -m pip install --upgrade pip && pip install -r requirements.txt && nxc -i .. -o ./output --lunr --commits",
+  "buildCommand": "cd .nxc && npm install && python3 -m pip install -r requirements.txt && nxc build -i .. -o ./output --lunr --commits",
   "outputDirectory": ".nxc/output",
   "routes": [
     {
