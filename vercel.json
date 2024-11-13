@@ -1,14 +1,18 @@
-{
+{{
   "version": 2,
-  "buildCommand": "cd .nxc && npm install && python3 -m pip install -r requirements.txt && nxc build -i .. -o ./output --lunr --commits",
-  "outputDirectory": ".nxc/output",
+  "builds": [
+    {
+      "src": "build.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": ".nxc/output"
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ],
-  "env": {
-    "NODE_VERSION": "16"
-  }
+  ]
 }
