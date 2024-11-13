@@ -10,4 +10,4 @@ export PATH=$HOME/miniforge/bin:$PATH
 # Install dependencies and run build
 cd .nxc
 pip install -r requirements.txt
-nxc build -i ... -o ./output --lunr --commits
+LOGLEVEL=INFO nxc build -i ... -o ./output --lunr --commits
