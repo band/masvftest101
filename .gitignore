@@ -20,4 +20,7 @@ node_modules
 
 # Local Netlify folder
 .netlify
+
+# local Vercel files
 .vercel
+miniforge.sh

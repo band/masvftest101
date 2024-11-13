@@ -9,4 +9,4 @@ export PATH=$HOME/miniforge/bin:$PATH
 cd .nxc
 pip install -r requirements.txt
 npm ci
-LOGLEVEL=INFO nxc build -i .. -o ./output --lunr --commits
+nxc build -i .. -o ./output --lunr --commits
