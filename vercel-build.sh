@@ -7,6 +7,6 @@ export PATH=$HOME/miniforge/bin:$PATH
 
 # Install dependencies and run build
 cd .nxc
-pip install -r requirements.txt
 npm ci
+pip install -r requirements.txt
 nxc build -i .. -o ./output --lunr --commits
