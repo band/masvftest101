@@ -24,3 +24,17 @@ node_modules
 # local Vercel files
 .vercel
 miniforge.sh
+# baseline gitignore for MARKPUB
+# for Obsidian.md vaults
+.obsidian/*
+
+# Python
+__pycache__
+venv
+
+# Node
+node_modules
+
+# MARKPUB
+.markpub/output/*
+
