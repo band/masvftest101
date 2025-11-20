@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="fs_path" content="/20241001 - netlify testing.md">
+    
+    <title>20241001 - netlify testing - masvftest101</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/masvftest101/markpub_static/css/style.css">
+    <link rel="stylesheet" href="/masvftest101/markpub_static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/masvftest101/lunr-index-1763648175.506297.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/masvftest101/lunr-posts-1763648175.506297.js"></script>
+    <script> function randomPageLink() { return "/masvftest101"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/masvftest101/index.html">masvftest101</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h2>Site Navigation</h2>
+<p><a class="wikilink" href="/masvftest101/README.html">HOME</a></p>
+<p><a href="/masvftest101/all-pages.html">ALL PAGES</a><br />
+<a href="/masvftest101/recent-pages.html">RECENT CHANGES</a><br />
+<a href="/masvftest101/search.html">SEARCH</a></p>
+<h4>Selected Content</h4>
+<p><a class="wikilink" href="/masvftest101/notes/Beth_Sawin.html">Beth Sawin</a><br />
+<a class="wikilink" href="/masvftest101/notes/20210606-azadiExcerpt.html">Arundhati Roy - Azadi</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/band/masvftest101/edit/main/20241001 - netlify testing.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>20241001 - netlify testing</h1>
+<ul>
+<li>ASSERT:
+<ol>
+<li>site rebuilds automatically (no intervention needed)</li>
+<li>this page shows up at the top of the recent pages list</li>
+</ol>
+</li>
+</ul>
+<h3>2024-10-04:</h3>
+<ul>
+<li>where does Netlify store and find the cache?</li>
+</ul>
+<pre><code class="language-shell">echo "$NETLIFY_BUILD_BASE"  # returns
+/opt/build
+</code></pre>
+<pre><code class="language-shell">ls -al "$NETLIFY_BUILD_BASE"
+total 8
+drwxr-xr-x  5 buildbot root       48 Oct  4 12:43 .
+drwxr-xr-x  1 root     root       36 Oct  4 12:43 ..
+drwxr-xr-x 24 buildbot root     4096 Oct  4 12:43 cache
+drwxr-xr-x  2 buildbot buildbot   18 Oct  4 12:43 env_store
+drwxr-xr-x  9 buildbot root     4096 Oct  4 12:43 repo
+</code></pre>
+<ul>
+<li>observation: git index problem does not seem to be happening
+<ul>
+<li>check with other Netlify builds</li>
+</ul>
+</li>
+</ul>
+<h2>2024-10-06:</h2>
+<ul>
+<li>problem solved and behavior understood
+<ul>
+<li>specifying branch "main" in the git log subprocess command returned empty strings for git log commands on latest commit</li>
+<li>removing the branch specification fixes the problem</li>
+<li>the branch name "main" does not match the name of the branch netlify is building from (is this true?)</li>
+<li>Test this updated file
+<ul>
+<li>ASSERT: will be at the top of the recent files list</li>
+<li>RESULT: it is!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+  </div>
+  <script src="/masvftest101/markpub_static/js/script.js"></script>
+  
+  <footer class="footer">
+  <div class="content has-text-centered">
+    
+    <div><strong>masvftest101</strong> by (oh no) mr bill.</div>
+    
+    
+    <div>Central repository at <a href="https://github.com/band/masvftest101">masvftest101</a>.</div>
+    
+    
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    
+    <div><em>Site last updated on Thursday, November 20, 2025 at 14:16 UTC.</em></div>
+  </div>
+</footer>
+</body>
+</html>

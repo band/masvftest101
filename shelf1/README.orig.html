@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="fs_path" content="/shelf1/README.orig.md">
+    
+    <title>README.orig - masvftest101</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/masvftest101/markpub_static/css/style.css">
+    <link rel="stylesheet" href="/masvftest101/markpub_static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/masvftest101/lunr-index-1763648175.506297.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/masvftest101/lunr-posts-1763648175.506297.js"></script>
+    <script> function randomPageLink() { return "/masvftest101"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/masvftest101/index.html">masvftest101</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h2>Site Navigation</h2>
+<p><a class="wikilink" href="/masvftest101/README.html">HOME</a></p>
+<p><a href="/masvftest101/all-pages.html">ALL PAGES</a><br />
+<a href="/masvftest101/recent-pages.html">RECENT CHANGES</a><br />
+<a href="/masvftest101/search.html">SEARCH</a></p>
+<h4>Selected Content</h4>
+<p><a class="wikilink" href="/masvftest101/notes/Beth_Sawin.html">Beth Sawin</a><br />
+<a class="wikilink" href="/masvftest101/notes/20210606-azadiExcerpt.html">Arundhati Roy - Azadi</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/band/masvftest101/edit/main/shelf1/README.orig.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Your Massive Wiki</h1>
+<p>Version 2023-09-13-002.</p>
+<h2>What This Repo Is For</h2>
+<p>If you're seeing this on GitHub, click "Use this template" to make your own copy of this repo. Or, you can create a fork, or just clone this repo any other way.</p>
+<p>This repo is great to start with if you'll ever want to use Massive Wiki Builder to publish your wiki to the web. If you don't need that capability, you can usually just start a Massive Wiki with an empty directory and Git and your favorite Markdown editor.</p>
+<h2>For Editing Wiki Files</h2>
+<p>Welcome to the home page of this wiki. Edit to make it your own! You can delete all the sample content on this page, and replace it with yours.</p>
+<p>Use Markdown, or just type text -- either way works.</p>
+<p>Use double square brackets around words to make links to other pages in this wiki. <a href="https://obsidian.md">Obsidian</a>, <a href="https://logseq.com/">logseq</a>, are two of many applications that support this kind of linking.</p>
+<h2>For Publishing Wiki To Website</h2>
+<p><strong>THIS FOLLOWING IS AN ADVANCED TOPIC.</strong> You do not need the following information if you just want to edit your wiki.</p>
+<h3>Getting Started</h3>
+<ul>
+<li>install <a href="https://www.python.org/downloads/">Python</a> minimum version
+3.8 but latest should work</li>
+<li><code>$ cd &lt;your-massive-wiki-starter-directory&gt;</code></li>
+<li>initialize and update the Massive Wiki Builder (MWB) and Massive Wiki Themes submodules<br />
+<code>$ git submodule init</code><br />
+<code>$ git submodule update --remote --merge</code><br />
+<code>$ cd .massivewikibuilder/massivewikibuilder</code></li>
+<li>one recommended practice to keep MWB Python code local to this wiki<br />
+<code>$ python3 -m venv venv</code><br />
+<code>$ source venv/bin/activate</code><br />
+<code>(venv) $ pip install --upgrade pip</code><br />
+<code>(venv) $ pip install -r requirements.txt</code></li>
+<li>enable full-text search on the MWB generated website (may require <code>npm</code> update)</li>
+<li><code>$ npm ci</code></li>
+<li>build:</li>
+<li><code>(venv) $ ./mwb3.py -c ../mwb.yaml -w ../.. -o ../output -t ../this-wiki-themes/basso --lunr</code></li>
+<li>run your local web server on the <code>.massivewikibuilder/massivewikibuilder/output</code> folder</li>
+</ul>
+<h3>Install and Use Notes</h3>
+<p>You can use <a href="https://github.com/peterkaminski/massivewikibuilder">Massive Wiki Builder</a> to publish (export) any Massive Wiki to static HTML files. The wiki is then in a format viewable by anyone with a web browser.</p>
+<p>If your website host has build automation, you can adapt the included <code>netlify.toml</code> file and the build automation should automatically use the Git submodule mechanism to retrieve the MWB code it needs.</p>
+<p>Massive Wiki Builder (MWB) and <a href="https://github.com/peterkaminski/massive-wiki-themes">Massive Wiki Themes</a> are included in this repo as Git submodules.</p>
+<p>If you are using MWB locally on your computer, you will need to retrieve MWB, and optionally, the themes. One way to do this is shown above.</p>
+<p>Note: When the upstream Massive Wiki Builder or Massive Wiki Themes repos have been updated, your submodules won't automatically update. Conceptually, they are "pinned" to the Git hash you set them up with.</p>
+<p>To upgrade your submodules to the latest upstream version, you can use these commands:</p>
+<pre><code class="language-shell">$ cd .massivewikibuilder
+$ git submodule init
+$ git submodule update --remote --merge massivewikibuilder
+$ git submodule update --remote --merge massive-wiki-themes
+</code></pre>
+<p>After that, <code>git status</code> will show that there have been changes to the submodules. Use your regular add, commit, and push process to update your repo.</p>
+<p>See the <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Submodules chapter of the Git Book</a> for more information about Git submodules.</p>
+<h3>Themes</h3>
+<p>This starter wiki is set up with two MWB / MWT themes, Alto and Basso, in the <code>.massivewikibuilder/this-wiki-themes</code> folder. We suggest you continue to use and customize your wiki's themes in the <code>.massivewikibuilder/this-wiki-themes</code> folder.</p>
+<p>The Massive Wiki Themes repo is updated from time to time, and when you refresh your local Git submodule in <code>.massivewikibuilder/massive-wiki-themes</code>, you will receive those updates. Rather than use those themes directly, though, it is suggested to copy what you want into your <code>this-wiki-themes</code> folder, and customize and use your copy of the themes from there.</p>
+<p>After you update <code>massive-wiki-themes</code>, you can compare (with <code>diff</code> or another tool) the upstream theme in <code>massive-wiki-themes</code> and your customized version of it in <code>this-wiki-themes</code>, and port over any changes you want.</p>
+
+      
+    </div>
+  </div>
+  <script src="/masvftest101/markpub_static/js/script.js"></script>
+  
+  <footer class="footer">
+  <div class="content has-text-centered">
+    
+    <div><strong>masvftest101</strong> by (oh no) mr bill.</div>
+    
+    
+    <div>Central repository at <a href="https://github.com/band/masvftest101">masvftest101</a>.</div>
+    
+    
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    
+    <div><em>Site last updated on Thursday, November 20, 2025 at 14:16 UTC.</em></div>
+  </div>
+</footer>
+</body>
+</html>
