@@ -6,7 +6,7 @@ bash miniforge.sh -b -p $HOME/miniforge
 export PATH=$HOME/miniforge/bin:$PATH
 
 # Install dependencies and run build
-cd .nxc
+cd .markpub
 npm ci
 pip install -r requirements.txt
-nxc build -i .. -o ./output --lunr --commits
+markpub build -i .. -o ./output --lunr --commits
